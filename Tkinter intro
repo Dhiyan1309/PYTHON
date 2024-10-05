@@ -1,0 +1,22 @@
+from tkinter import * 
+#This imports the Tkinter library, which is the standard Python interface to create graphical user interface (GUI) applications.
+#The * means importing all the components (widgets like Label, Button, Entry, etc.) from the Tkinter library into the current namespace
+
+window=Tk()
+
+#This creates the main window of the application. Tk() is the root widget and represents the entire GUI window.
+#The window variable now holds a reference to this main application window.
+
+inp=Label(window,text="Hello World")
+#A Label widget is created. It’s used to display static text in the window.
+#Label(window, text="Hello World"): This creates a label that will be placed inside the window and displays the text "Hello World".
+#inp is the variable that references this Label widget.
+
+inp.pack()
+#The pack() method is used to display the widget (Label) in the window.
+#This tells Tkinter to add the widget to the window and automatically handle its positioning and size based on the available space.
+
+window.mainloop()
+#This is the event loop of the Tkinter application. It keeps the window open and listens for any user interactions (such as closing the window or clicking a button).
+#Without mainloop(), the window would appear briefly and then immediately close.
+
