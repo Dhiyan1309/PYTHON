@@ -1,0 +1,20 @@
+from tkinter import *
+
+window=Tk()
+window.title('Hello World')
+window.geometry('500x500')
+window.config(background='blue')
+frame1=Frame(window,width=150,height=150,cursor='dot',bg='green')
+frame2=Frame(window,width=150,height=150,cursor='dotbox',bg='black')
+
+button1=Button(frame1,text='Save the Planet',bg="Red")
+button2=Button(frame2,text='Im out of this',bg="White")
+button3=Button(frame1,text='Logged',fg="Yellow",bg="Black")
+
+frame1.pack(side=TOP)
+frame2.pack(side=BOTTOM)
+button1.pack()
+button2.pack()
+button3.pack()
+
+window.mainloop()
