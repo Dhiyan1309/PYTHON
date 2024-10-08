@@ -1,0 +1,12 @@
+from tkinter import *
+window=Tk()
+
+window.title("Simple")
+window.geometry("500x500")
+
+def log_entry():
+    print("Logged in")
+buttom=Button(window,text="LOGIN",command=log_entry,width=12,bg="red",fg="white")
+buttom.pack()
+
+window.mainloop()
